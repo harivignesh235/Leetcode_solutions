@@ -1,0 +1,7 @@
+import math
+
+class Solution:
+    def uniquePaths(self, m: int, n: int) -> int:
+        # Total moves = m + n - 2
+        # Choose (m - 1) moves to go down
+        return math.comb(m + n - 2, m - 1)
